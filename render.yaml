@@ -1,0 +1,8 @@
+# render.yaml
+services:
+  - type: web
+    name: finsight-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run Home.py
+    pythonVersion: 3.10.12
